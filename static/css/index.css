@@ -246,3 +246,19 @@ body {
 }
 
 
+/* Reduce spacing between sections */
+.section.hero.is-light {
+  padding: 1.5rem 1.5rem;
+  margin-bottom: 0;  /* Remove bottom margin */
+}
+
+.section.hero.is-light + .section.hero.is-light {
+  padding-top: 0;  /* Remove top padding when two light sections are adjacent */
+}
+
+/* Adjust hero-body padding if needed */
+.hero-body {
+  padding: 1.5rem 1.5rem;
+}
+
+

@@ -62,9 +62,9 @@
                   <span class="author-block">
                   <a href="https://bwgzk.github.io/KeZhang.github.io/" target="_blank">Ke Zhang</a><sup>2</sup>,</span>
                   <span class="author-block">
-                  <a href="https://scholar.google.com/citations?user=2BahjdkAAAAJ&hl=en" target="_blank">Tianyi Chen</a><sup>3</sup>,</span>
-                  <span class="author-block">
                   <a href="https://scholar.google.com/citations?user=XR5CQJcAAAAJ&hl=en" target="_blank">Jinxin Zhou</a><sup>1</sup>,</span>
+                  <span class="author-block">
+                  <a href="https://scholar.google.com/citations?user=2BahjdkAAAAJ&hl=en" target="_blank">Tianyi Chen</a><sup>3</sup>,</span>
                   <span class="author-block">
                   <a href="https://www.microsoft.com/applied-sciences/people/ilya-zharkov" target="_blank">llya Zharkov</a><sup>3</sup>,</span>
                   <span class="author-block">
@@ -156,37 +156,9 @@
 </section>
 
 
-
-<!-- <div class="image-comparison-group">
-  <div class="image-comparison">
-    <img class="image-before" src="static/images/noisy_0023.png" alt="Noisy">
-    <img class="image-after" src="static/images/0023.png" alt="Clean">
-    <div class="slider-line"></div>
-    <div class="slider-handle"></div>
-  </div>
-
-  <div class="image-comparison">
-    <img class="image-before" src="static/images/noisy_0023.png" alt="Noisy">
-    <img class="image-after" src="static/images/mask_0023.png" alt="Mask">
-  </div>
-</div>
-
-
-<div class="image-comparison-group">
-  <div class="image-comparison">
-    <img class="image-before" src="static/images/rain_070.png" alt="Noisy">
-    <img class="image-after" src="static/images/derain_070.png" alt="Clean">
-    <div class="slider-line"></div>
-    <div class="slider-handle"></div>
-  </div>
-
-  <div class="image-comparison">
-    <img class="image-before" src="static/images/rain_070.png" alt="Noisy">
-    <img class="image-after" src="static/images/mask_derain_070.png" alt="Mask">
-  </div>
-</div> -->
-
+<!-- Start of Selection -->
 <div class="container">
+  <!-- <h2 class="title has-text-centered">Demonstrations</h2> -->
   <div class="columns is-multiline">
     <div class="column is-one-fifth">
       <h3 class="subtitle has-text-centered">Denoise</h3>
@@ -269,6 +241,82 @@
     </div>
   </div>
 </div>
+<!-- End of Selection -->
+
+
+<!-- TL;DR Section -->
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+      <div class="columns is-centered">
+        <div class="column is-full-width">
+          <div class="content has-text-centered">
+            <h2 class="title">TL;DR</h2>
+            <p>
+              We present <strong> Cat-AIR </strong> 🚀, an efficient all-in-one image restoration framework that adaptively balances local and global information via alternating spatial-channel attention, using task- and content-aware routing to allocate convolution or self-attention based on region and task complexity.
+            </p>
+            <p>
+              🔥🔥 More content comming soon: codes, demos, models.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- Teaser image -->
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+      <div class="columns is-centered">
+        <div class="column is-full-width">
+          <div class="image-container" style="text-align: center;">
+            <img src="static/images/moti.png" alt="Overview Image" style="max-width: 100%; height: auto;">
+          </div>
+          <p class="has-text-centered">
+            Illustration of content and task-aware image restoration. <strong>Left)</strong> Image patches with varying texture complexity and degradation levels. <strong>Right)</strong> We dynamically apply self-attention for complex regions/tasks, while using convolution for simple regions/tasks.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End teaser image -->
+
+
+
+<!-- <div class="image-comparison-group">
+  <div class="image-comparison">
+    <img class="image-before" src="static/images/noisy_0023.png" alt="Noisy">
+    <img class="image-after" src="static/images/0023.png" alt="Clean">
+    <div class="slider-line"></div>
+    <div class="slider-handle"></div>
+  </div>
+
+  <div class="image-comparison">
+    <img class="image-before" src="static/images/noisy_0023.png" alt="Noisy">
+    <img class="image-after" src="static/images/mask_0023.png" alt="Mask">
+  </div>
+</div>
+
+
+<div class="image-comparison-group">
+  <div class="image-comparison">
+    <img class="image-before" src="static/images/rain_070.png" alt="Noisy">
+    <img class="image-after" src="static/images/derain_070.png" alt="Clean">
+    <div class="slider-line"></div>
+    <div class="slider-handle"></div>
+  </div>
+
+  <div class="image-comparison">
+    <img class="image-before" src="static/images/rain_070.png" alt="Noisy">
+    <img class="image-after" src="static/images/mask_derain_070.png" alt="Mask">
+  </div>
+</div> -->
+
+
 
 
 <!-- Teaser video-->
@@ -287,6 +335,131 @@
   </div>
 </section> -->
 <!-- End teaser video -->
+
+
+
+<!-- Paper abstract -->
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            All-in-one image restoration seeks to recover high-quality images from various types of degradation using a single model, without prior knowledge of the corruption source. However, existing methods often struggle to effectively and efficiently handle multiple degradation types. We present Cat-AIR, a novel <strong>C</strong>ontent <strong>A</strong>nd <strong>T</strong>ask-aware framework for <strong>A</strong>ll-in-one <strong>I</strong>mage <strong>R</strong>estoration. Cat-AIR incorporates an alternating spatial-channel attention mechanism that adaptively balances the local and global information for different tasks. Specifically, we introduce cross-layer channel attentions and cross-feature spatial attentions that allocate computations based on content and task complexity. Furthermore, we propose a smooth learning strategy that allows for seamless adaptation to new restoration tasks while maintaining performance on existing ones. Extensive experiments demonstrate that Cat-AIR achieves state-of-the-art results across a wide range of restoration tasks, requiring fewer FLOPs than previous methods, establishing new benchmarks for efficient all-in-one image restoration.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End paper abstract -->
+
+<!-- FLOPs vs PSNR and Model Architecture -->
+<section class="section hero is-light">
+  <div class="hero-body">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <div class="columns">
+          <div class="column is-half">
+            <h2 class="title is-3">FLOPs vs PSNR comparison.</h2>
+            <div class="content has-text-centered">
+              <img src="static/images/flops_vs_psnr.png" alt="FLOPs vs PSNR" style="width: 80%; max-width: 480px;">
+              <figcaption>Average performance (PSNR vs. FLOPs) across three degradations (denoising, deraining, dehazing) and five degradations (including deblurring and low-light enhancement). Our methods achieve state-of-the-art results with lower computations.</figcaption>
+            </div>
+          </div>
+          <div class="column is-half">
+            <h2 class="title is-3">Cat-AIR architecture</h2>
+            <div class="content has-text-centered">
+              <img src="static/images/arch.png" alt="Model Architecture" style="width: 100%; max-width: 600px;">
+              <figcaption>Overview of Cat-AIR. Our design features alternating channel and spatial attention mechanisms, where channel attention complexity scales across layers and spatial attention complexity adapts based on features. Prompt modules between decoder blocks are inserted to identify degradations.</figcaption>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Method Section -->
+<section class="section hero is-light" >
+  <div class="hero-body">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Method</h2>
+        <div class="content">
+          <p class="has-text-justified">
+            The core of the method lies in an alternating spatial-channel attention mechanism, which adaptively balances local and global information through cross-layer channel attention and cross-feature spatial attention. These mechanisms dynamically allocate computational resources based on both task and content complexity—using lightweight convolution for simple regions and powerful self-attention for complex ones. </p>
+          <div class="columns">
+            <div class="column is-one-third">
+              <figure class="image">
+                <img src="static/images/channel_attn.png" alt="Channel Attention Mechanism" style="width: 122%; max-width: 800px;">
+                <figcaption>Cross-Layer Channel Attention</figcaption>
+              </figure>
+            </div>
+            <div class="column is-two-thirds">
+              <figure class="image">
+                <img src="static/images/spat.png" alt="Spatial Attention Mechanism">
+                <figcaption>Cross-Feature Spatial attention</figcaption>
+              </figure>
+            </div>
+          </div>
+          <!-- <p class="has-text-justified">
+            Architectural diagrams of (a) cross-layer channel attention and (b) cross-feature spatial attention mechanisms.
+          </p> -->
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- Results Section -->
+<section class="section hero is-light">
+  <div class="hero-body">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-full">
+        <h2 class="title is-3">Results Visualization</h2>
+        <div class="content">
+          <figure class="image">
+            <img src="static/images/ttt.png" alt="Results Image" style="width: 100%;">
+            <figcaption>Visual comparison on five image restoration tasks.</figcaption>
+          </figure>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- Mask Visualization Section -->
+<section class="section hero is-light">
+  <div class="hero-body">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Mask Visualization</h2>
+        <div class="content">
+          <div class="columns">
+            <div class="column is-half">
+              <figure class="image">
+                <img src="static/images/mask-content.png" alt="Content-Awareness Visualization">
+                <figcaption>Content-Awareness</figcaption>
+              </figure>
+            </div>
+            <div class="column is-half">
+              <figure class="image">
+                <img src="static/images/mask-noise.png" alt="Task-Awareness Visualization">
+                <figcaption>Task-Awareness</figcaption>
+              </figure>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
 
 <!-- Youtube video -->
 <section class="hero is-small is-light">
@@ -308,22 +481,7 @@
 </section>
 <!-- End youtube video -->
 
-<!-- Paper abstract -->
-<section class="section hero is-light">
-  <div class="container is-max-desktop">
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
-        <h2 class="title is-3">Abstract</h2>
-        <div class="content has-text-justified">
-          <p>
-            All-in-one image restoration models can restore high-quality images from various types and levels of degradation in one single model without prior information about the degradation type. In this work, we focus on improving both the performance and efficiency of the all-in-one image restoration model. First, to capture both global and local information crucial for various tasks, we design a transformer block with alternating channel self-attention and spatial self-attention. Second, recognizing that plain image regions are easier to restore than detailed ones, and that different tasks have different levels of difficulty, we propose to allocate resources dynamically based on the content and task of the image. Specifically, we design attention mixer modules that automatically choose complex self-attention for detailed areas and hard tasks, and simple squeeze-and-excitation for plain areas and easy tasks. Our method achieves state-of-the-art results on several restoration tasks, including image denoising, deraining, and dehazing, with fewer FLOPs compared to previous works.
-          </p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- End paper abstract -->
+
 
 
 <!-- Gradio Demo -->
@@ -344,53 +502,6 @@
 
 
 
-<!-- Architecture Image -->
-<section class="section hero is-light">
-  <div class="hero-body">
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
-        <h2 class="title is-3">Model Architecture</h2>
-        <div class="content has-text-centered">
-          <img src="static/images/arch.png" alt="Model Architecture" style="width: 100%; max-width: 800px;">
-          <p class="caption">
-            Overview of our Cat-AIR architecture.
-          </p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-
-<!-- TSNE Visualization Section -->
-<section class="section hero is-light">
-  <div class="hero-body">
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
-        <h2 class="title is-3">t-SNE Visualizations</h2>
-        <div class="content">
-          <div class="columns">
-            <div class="column">
-              <figure class="image">
-                <img src="static/images/3task-tsne.png" alt="3-Task t-SNE Visualization">
-                <figcaption>t-SNE visualization for 3 tasks</figcaption>
-              </figure>
-            </div>
-            <div class="column">
-              <figure class="image">
-                <img src="static/images/5task-tsne.png" alt="4-Task t-SNE Visualization">
-                <figcaption>t-SNE visualization for 4 tasks</figcaption>
-              </figure>
-            </div>
-          </div>
-          <p class="has-text-centered">
-            t-SNE visualizations demonstrating the distribution of features for different image restoration tasks.
-          </p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
 
 
 
@@ -471,7 +582,7 @@
 
 
 <!-- Paper poster -->
-<section class="hero is-small is-light">
+<!-- <section class="hero is-small is-light">
   <div class="hero-body">
     <div class="container">
       <h2 class="title">Poster</h2>
@@ -481,7 +592,7 @@
         
       </div>
     </div>
-  </section>
+  </section> -->
 <!--End paper poster -->
 
 
@@ -489,7 +600,7 @@
   <section class="section" id="BibTeX">
     <div class="container is-max-desktop content">
       <h2 class="title">BibTeX</h2>
-      <pre><code>BibTex Code Here</code></pre>
+      <pre><code>TBA</code></pre>
     </div>
 </section>
 <!--End BibTex citation -->
@@ -503,7 +614,7 @@
 
           <p>
             This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a> which was adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
-            You are free to borrow the source code of this website, we just ask that you link back to this page in the footer. <br> This website is licensed under a <a rel="license"  href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
+             <br> This website is licensed under a <a rel="license"  href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
             Commons Attribution-ShareAlike 4.0 International License</a>.
           </p>
 
