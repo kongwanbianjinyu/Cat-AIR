@@ -1,0 +1,248 @@
+body {
+  font-family: 'Noto Sans', sans-serif;
+}
+
+
+.footer .icon-link {
+    font-size: 25px;
+    color: #000;
+}
+
+.link-block a {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.dnerf {
+  font-variant: small-caps;
+}
+
+
+.teaser .hero-body {
+  padding-top: 0;
+  padding-bottom: 3rem;
+}
+
+.teaser {
+  font-family: 'Google Sans', sans-serif;
+}
+
+
+.publication-title {
+}
+
+.publication-banner {
+  max-height: parent;
+
+}
+
+.publication-banner video {
+  position: relative;
+  left: auto;
+  top: auto;
+  transform: none;
+  object-fit: fit;
+}
+
+.publication-header .hero-body {
+}
+
+.publication-title {
+    font-family: 'Google Sans', sans-serif;
+}
+
+.publication-authors {
+    font-family: 'Google Sans', sans-serif;
+}
+
+.publication-venue {
+    color: #555;
+    width: fit-content;
+    font-weight: bold;
+}
+
+.publication-awards {
+    color: #ff3860;
+    width: fit-content;
+    font-weight: bolder;
+}
+
+.publication-authors {
+}
+
+.publication-authors a {
+   color: hsl(204, 86%, 53%) !important;
+}
+
+.publication-authors a:hover {
+    text-decoration: underline;
+}
+
+.author-block {
+  display: inline-block;
+}
+
+.publication-banner img {
+}
+
+.publication-authors {
+  /*color: #4286f4;*/
+}
+
+.publication-video {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 56.25%;
+
+    overflow: hidden;
+    border-radius: 10px !important;
+}
+
+.publication-video iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.publication-body img {
+}
+
+.results-carousel {
+  overflow: hidden;
+}
+
+.results-carousel .item {
+  margin: 5px;
+  overflow: hidden;
+  padding: 20px;
+  font-size: 0;
+}
+
+.results-carousel video {
+  margin: 0;
+}
+
+.slider-pagination .slider-page {
+  background: #000000;
+}
+
+.eql-cntrb { 
+  font-size: smaller;
+}
+
+
+.image-comparison {
+  position: relative;
+  width: 100%;
+  max-width: 100%; /* Ensure it doesn't exceed the parent width */
+  overflow: hidden;
+  aspect-ratio: 16 / 9; /* Adjust this ratio to match your images */
+}
+
+.image-before,
+.image-after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain; /* Changed from cover to contain */
+  background-color: #f0f0f0; /* Light grey background */
+}
+
+.image-after {
+  clip-path: polygon(50% 0, 100% 0, 100% 100%, 50% 100%);
+}
+
+.slider-line {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 4px; /* Slightly thicker line */
+  height: 100%;
+  background-color: white;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5); /* Add some shadow for visibility */
+  z-index: 10;
+}
+
+.slider-handle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 40px;
+  height: 40px;
+  background-color: white;
+  border: 3px solid #333; /* Add a border for better visibility */
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  cursor: ew-resize;
+  z-index: 20;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Add shadow for depth */
+}
+
+/* Add arrows to the slider handle */
+.slider-handle::before,
+.slider-handle::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-style: solid;
+}
+
+.slider-handle::before {
+  left: -8px;
+  top: 50%;
+  transform: translateY(-50%);
+  border-width: 8px 8px 8px 0;
+  border-color: transparent #333 transparent transparent;
+}
+
+.slider-handle::after {
+  right: -8px;
+  top: 50%;
+  transform: translateY(-50%);
+  border-width: 8px 0 8px 8px;
+  border-color: transparent transparent transparent #333;
+}
+
+/* .image-comparison-group {
+  position: relative;
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.image-comparison-group .image-comparison {
+  margin-bottom: 20px;
+}
+
+.image-comparison-group .image-comparison:nth-child(2) .slider-line,
+.image-comparison-group .image-comparison:nth-child(2) .slider-handle {
+  display: none;
+} */
+
+.image-comparison-group {
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+.image-comparison {
+  width: 100%;
+}
+
+.image-comparison img {
+  width: 100%;
+  height: auto;
+}
+
+@media screen and (max-width: 768px) {
+  .column.is-one-fifth {
+    width: 100%;
+  }
+}
+
+
